@@ -8,10 +8,5 @@ pipeline {
         dependencyCheck()
       }
     }
-    post {
-      always {
-        archiveArtifacts 'dependency-check.xml'
-      }
-    }
   }
 }
